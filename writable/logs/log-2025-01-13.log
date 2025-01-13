@@ -1,0 +1,1013 @@
+INFO - 2025-01-13 03:46:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 03:46:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 03:47:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-01-13 03:47:05 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in D:\xampp\htdocs\kelola data kalibrasi 0071\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'kalibrasi_0071', 3306, '', 0)
+#1 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\kelola data kalibrasi 0071\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\xampp\htdocs\kelola data kalibrasi 0071\app\Controllers\Home.php(21): CodeIgniter\BaseModel->findAll()
+#7 D:\xampp\htdocs\kelola data kalibrasi 0071\system\CodeIgniter.php(933): App\Controllers\Home->halLokasi()
+#8 D:\xampp\htdocs\kelola data kalibrasi 0071\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 D:\xampp\htdocs\kelola data kalibrasi 0071\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\xampp\htdocs\kelola data kalibrasi 0071\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 D:\xampp\htdocs\kelola data kalibrasi 0071\system\rewrite.php(44): require_once('D:\\xampp\\htdocs...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in D:\xampp\htdocs\kelola data kalibrasi 0071\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\xampp\htdocs\kelola data kalibrasi 0071\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\xampp\htdocs\kelola data kalibrasi 0071\app\Controllers\Home.php(21): CodeIgniter\BaseModel->findAll()
+#6 D:\xampp\htdocs\kelola data kalibrasi 0071\system\CodeIgniter.php(933): App\Controllers\Home->halLokasi()
+#7 D:\xampp\htdocs\kelola data kalibrasi 0071\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 D:\xampp\htdocs\kelola data kalibrasi 0071\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\xampp\htdocs\kelola data kalibrasi 0071\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\xampp\htdocs\kelola data kalibrasi 0071\system\rewrite.php(44): require_once('D:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2025-01-13 03:47:05 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: GET, Route: lokasi]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `lokasi`', [], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Home.php(21): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->halLokasi()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\kelola data kalibrasi 0071\\public\\index.php')
+INFO - 2025-01-13 03:47:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 03:47:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 03:47:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 04:00:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 04:01:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 04:02:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 04:02:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-01-13 04:07:34 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in D:\xampp\htdocs\kelola data kalibrasi 0071\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'kalibrasi_0071', 3306, '', 0)
+#1 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\kelola data kalibrasi 0071\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\xampp\htdocs\kelola data kalibrasi 0071\app\Controllers\Home.php(21): CodeIgniter\BaseModel->findAll()
+#7 D:\xampp\htdocs\kelola data kalibrasi 0071\system\CodeIgniter.php(933): App\Controllers\Home->halLokasi()
+#8 D:\xampp\htdocs\kelola data kalibrasi 0071\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 D:\xampp\htdocs\kelola data kalibrasi 0071\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\xampp\htdocs\kelola data kalibrasi 0071\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 D:\xampp\htdocs\kelola data kalibrasi 0071\system\rewrite.php(44): require_once('D:\\xampp\\htdocs...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in D:\xampp\htdocs\kelola data kalibrasi 0071\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\xampp\htdocs\kelola data kalibrasi 0071\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\xampp\htdocs\kelola data kalibrasi 0071\app\Controllers\Home.php(21): CodeIgniter\BaseModel->findAll()
+#6 D:\xampp\htdocs\kelola data kalibrasi 0071\system\CodeIgniter.php(933): App\Controllers\Home->halLokasi()
+#7 D:\xampp\htdocs\kelola data kalibrasi 0071\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 D:\xampp\htdocs\kelola data kalibrasi 0071\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\xampp\htdocs\kelola data kalibrasi 0071\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\xampp\htdocs\kelola data kalibrasi 0071\system\rewrite.php(44): require_once('D:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2025-01-13 04:07:34 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: GET, Route: lokasi]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `lokasi`', [], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Home.php(21): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->halLokasi()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\kelola data kalibrasi 0071\\public\\index.php')
+INFO - 2025-01-13 04:07:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 04:08:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 04:09:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 04:09:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 04:09:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 04:09:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 04:09:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 04:09:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 04:09:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 04:09:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 04:09:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 06:16:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 06:18:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 06:18:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 06:18:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 06:18:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 06:18:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 06:19:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 06:19:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 06:19:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 06:19:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 06:19:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 06:19:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 06:19:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 06:19:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 06:38:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 06:38:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 06:38:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 06:38:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 06:38:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 06:39:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 06:40:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 06:40:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 06:40:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 06:41:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 06:41:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 06:42:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 06:42:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 06:42:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 06:42:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 06:42:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 06:42:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 06:44:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 06:44:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 06:49:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 06:49:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 06:50:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 06:55:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 06:55:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 07:04:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 07:07:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 07:08:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 07:09:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 07:09:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 07:11:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 07:11:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 07:11:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 07:11:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 07:11:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 07:22:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 07:22:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 07:23:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 07:23:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-01-13 07:23:02 --> ErrorException: foreach() argument must be of type array|object, string given
+[Method: GET, Route: transaksi/create]
+in APPPATH\Views\transaksi\create.php on line 12.
+ 1 APPPATH\Views\transaksi\create.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'D:\\xampp\\htdocs\\kelola data kalibrasi 0071\\app\\Views\\transaksi\\create.php', 12)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\xampp\\htdocs\\kelola data kalibrasi 0071\\app\\Views\\transaksi\\create.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('transaksi/create', [], true)
+ 5 APPPATH\Controllers\TransaksiController.php(36): view('transaksi/create', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TransaksiController->create()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\kelola data kalibrasi 0071\\public\\index.php')
+INFO - 2025-01-13 07:24:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-01-13 07:25:42 --> mysqli_sql_exception: Duplicate entry '0072' for key 'PRIMARY' in D:\xampp\htdocs\kelola data kalibrasi 0071\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `tr...', 0)
+#1 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tr...')
+#2 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tr...')
+#3 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tr...', Array, false)
+#4 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\xampp\htdocs\kelola data kalibrasi 0071\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\xampp\htdocs\kelola data kalibrasi 0071\app\Controllers\TransaksiController.php(148): CodeIgniter\Model->insert(Array)
+#8 D:\xampp\htdocs\kelola data kalibrasi 0071\system\CodeIgniter.php(933): App\Controllers\TransaksiController->store()
+#9 D:\xampp\htdocs\kelola data kalibrasi 0071\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+#10 D:\xampp\htdocs\kelola data kalibrasi 0071\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\xampp\htdocs\kelola data kalibrasi 0071\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 D:\xampp\htdocs\kelola data kalibrasi 0071\system\rewrite.php(44): require_once('D:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2025-01-13 07:25:42 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '0072' for key 'PRIMARY'
+[Method: POST, Route: transaksi/store]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `transaksikalibrasi` (`IdKalibrasi`, `TransType`, `Petugas`, `Alat`, `NoSPMB`, `TglSPMB`, `NoSPK`, `TglSPK`, `Vendor`, `TglKalibrasi`, `TglExpire`, `NoDokumen`, `Status`) VALUES (:IdKalibrasi:, :TransType:, :Petugas:, :Alat:, :NoSPMB:, :TglSPMB:, :NoSPK:, :TglSPK:, :Vendor:, :TglKalibrasi:, :TglExpire:, :NoDokumen:, :Status:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\TransaksiController.php(148): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TransaksiController->store()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\kelola data kalibrasi 0071\\public\\index.php')
+CRITICAL - 2025-01-13 07:25:42 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '0072' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `transaksikalibrasi` (`IdKalibrasi`, `TransType`, `Petugas`, `Alat`, `NoSPMB`, `TglSPMB`, `NoSPK`, `TglSPK`, `Vendor`, `TglKalibrasi`, `TglExpire`, `NoDokumen`, `Status`) VALUES (\'0072\', \'Kalibrasi Internal\', \'PT001\', \'L001\', \'2132\', \'2025-01-13\', \'213\', \'2025-01-13\', \'112321\', \'2025-01-13\', \'2025-01-13\', \'2e23\', \'12321\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `transaksikalibrasi` (`IdKalibrasi`, `TransType`, `Petugas`, `Alat`, `NoSPMB`, `TglSPMB`, `NoSPK`, `TglSPK`, `Vendor`, `TglKalibrasi`, `TglExpire`, `NoDokumen`, `Status`) VALUES (\'0072\', \'Kalibrasi Internal\', \'PT001\', \'L001\', \'2132\', \'2025-01-13\', \'213\', \'2025-01-13\', \'112321\', \'2025-01-13\', \'2025-01-13\', \'2e23\', \'12321\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `transaksikalibrasi` (`IdKalibrasi`, `TransType`, `Petugas`, `Alat`, `NoSPMB`, `TglSPMB`, `NoSPK`, `TglSPK`, `Vendor`, `TglKalibrasi`, `TglExpire`, `NoDokumen`, `Status`) VALUES (:IdKalibrasi:, :TransType:, :Petugas:, :Alat:, :NoSPMB:, :TglSPMB:, :NoSPK:, :TglSPK:, :Vendor:, :TglKalibrasi:, :TglExpire:, :NoDokumen:, :Status:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\TransaksiController.php(148): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TransaksiController->store()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\kelola data kalibrasi 0071\\public\\index.php')
+CRITICAL - 2025-01-13 07:25:42 --> [Caused by] mysqli_sql_exception: Duplicate entry '0072' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `transaksikalibrasi` (`IdKalibrasi`, `TransType`, `Petugas`, `Alat`, `NoSPMB`, `TglSPMB`, `NoSPK`, `TglSPK`, `Vendor`, `TglKalibrasi`, `TglExpire`, `NoDokumen`, `Status`) VALUES (\'0072\', \'Kalibrasi Internal\', \'PT001\', \'L001\', \'2132\', \'2025-01-13\', \'213\', \'2025-01-13\', \'112321\', \'2025-01-13\', \'2025-01-13\', \'2e23\', \'12321\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `transaksikalibrasi` (`IdKalibrasi`, `TransType`, `Petugas`, `Alat`, `NoSPMB`, `TglSPMB`, `NoSPK`, `TglSPK`, `Vendor`, `TglKalibrasi`, `TglExpire`, `NoDokumen`, `Status`) VALUES (\'0072\', \'Kalibrasi Internal\', \'PT001\', \'L001\', \'2132\', \'2025-01-13\', \'213\', \'2025-01-13\', \'112321\', \'2025-01-13\', \'2025-01-13\', \'2e23\', \'12321\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `transaksikalibrasi` (`IdKalibrasi`, `TransType`, `Petugas`, `Alat`, `NoSPMB`, `TglSPMB`, `NoSPK`, `TglSPK`, `Vendor`, `TglKalibrasi`, `TglExpire`, `NoDokumen`, `Status`) VALUES (\'0072\', \'Kalibrasi Internal\', \'PT001\', \'L001\', \'2132\', \'2025-01-13\', \'213\', \'2025-01-13\', \'112321\', \'2025-01-13\', \'2025-01-13\', \'2e23\', \'12321\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `transaksikalibrasi` (`IdKalibrasi`, `TransType`, `Petugas`, `Alat`, `NoSPMB`, `TglSPMB`, `NoSPK`, `TglSPK`, `Vendor`, `TglKalibrasi`, `TglExpire`, `NoDokumen`, `Status`) VALUES (:IdKalibrasi:, :TransType:, :Petugas:, :Alat:, :NoSPMB:, :TglSPMB:, :NoSPK:, :TglSPK:, :Vendor:, :TglKalibrasi:, :TglExpire:, :NoDokumen:, :Status:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\TransaksiController.php(148): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TransaksiController->store()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\kelola data kalibrasi 0071\\public\\index.php')
+INFO - 2025-01-13 07:25:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-01-13 07:25:52 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`kalibrasi_0071`.`transaksikalibrasi`, CONSTRAINT `transaksikalibrasi_ibfk_3` FOREIGN KEY (`Vendor`) REFERENCES `vendor` (`IdVendor`)) in D:\xampp\htdocs\kelola data kalibrasi 0071\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `tr...', 0)
+#1 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tr...')
+#2 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tr...')
+#3 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tr...', Array, false)
+#4 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\xampp\htdocs\kelola data kalibrasi 0071\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\xampp\htdocs\kelola data kalibrasi 0071\app\Controllers\TransaksiController.php(148): CodeIgniter\Model->insert(Array)
+#8 D:\xampp\htdocs\kelola data kalibrasi 0071\system\CodeIgniter.php(933): App\Controllers\TransaksiController->store()
+#9 D:\xampp\htdocs\kelola data kalibrasi 0071\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+#10 D:\xampp\htdocs\kelola data kalibrasi 0071\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\xampp\htdocs\kelola data kalibrasi 0071\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 D:\xampp\htdocs\kelola data kalibrasi 0071\system\rewrite.php(44): require_once('D:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2025-01-13 07:25:52 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`kalibrasi_0071`.`transaksikalibrasi`, CONSTRAINT `transaksikalibrasi_ibfk_3` FOREIGN KEY (`Vendor`) REFERENCES `vendor` (`IdVendor`))
+[Method: POST, Route: transaksi/store]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `transaksikalibrasi` (`IdKalibrasi`, `TransType`, `Petugas`, `Alat`, `NoSPMB`, `TglSPMB`, `NoSPK`, `TglSPK`, `Vendor`, `TglKalibrasi`, `TglExpire`, `NoDokumen`, `Status`) VALUES (:IdKalibrasi:, :TransType:, :Petugas:, :Alat:, :NoSPMB:, :TglSPMB:, :NoSPK:, :TglSPK:, :Vendor:, :TglKalibrasi:, :TglExpire:, :NoDokumen:, :Status:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\TransaksiController.php(148): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TransaksiController->store()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\kelola data kalibrasi 0071\\public\\index.php')
+CRITICAL - 2025-01-13 07:25:52 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`kalibrasi_0071`.`transaksikalibrasi`, CONSTRAINT `transaksikalibrasi_ibfk_3` FOREIGN KEY (`Vendor`) REFERENCES `vendor` (`IdVendor`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `transaksikalibrasi` (`IdKalibrasi`, `TransType`, `Petugas`, `Alat`, `NoSPMB`, `TglSPMB`, `NoSPK`, `TglSPK`, `Vendor`, `TglKalibrasi`, `TglExpire`, `NoDokumen`, `Status`) VALUES (\'0073\', \'Kalibrasi Internal\', \'PT001\', \'L001\', \'2132\', \'2025-01-13\', \'213\', \'2025-01-13\', \'112321\', \'2025-01-13\', \'2025-01-13\', \'2e23\', \'12321\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `transaksikalibrasi` (`IdKalibrasi`, `TransType`, `Petugas`, `Alat`, `NoSPMB`, `TglSPMB`, `NoSPK`, `TglSPK`, `Vendor`, `TglKalibrasi`, `TglExpire`, `NoDokumen`, `Status`) VALUES (\'0073\', \'Kalibrasi Internal\', \'PT001\', \'L001\', \'2132\', \'2025-01-13\', \'213\', \'2025-01-13\', \'112321\', \'2025-01-13\', \'2025-01-13\', \'2e23\', \'12321\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `transaksikalibrasi` (`IdKalibrasi`, `TransType`, `Petugas`, `Alat`, `NoSPMB`, `TglSPMB`, `NoSPK`, `TglSPK`, `Vendor`, `TglKalibrasi`, `TglExpire`, `NoDokumen`, `Status`) VALUES (:IdKalibrasi:, :TransType:, :Petugas:, :Alat:, :NoSPMB:, :TglSPMB:, :NoSPK:, :TglSPK:, :Vendor:, :TglKalibrasi:, :TglExpire:, :NoDokumen:, :Status:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\TransaksiController.php(148): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TransaksiController->store()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\kelola data kalibrasi 0071\\public\\index.php')
+CRITICAL - 2025-01-13 07:25:52 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`kalibrasi_0071`.`transaksikalibrasi`, CONSTRAINT `transaksikalibrasi_ibfk_3` FOREIGN KEY (`Vendor`) REFERENCES `vendor` (`IdVendor`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `transaksikalibrasi` (`IdKalibrasi`, `TransType`, `Petugas`, `Alat`, `NoSPMB`, `TglSPMB`, `NoSPK`, `TglSPK`, `Vendor`, `TglKalibrasi`, `TglExpire`, `NoDokumen`, `Status`) VALUES (\'0073\', \'Kalibrasi Internal\', \'PT001\', \'L001\', \'2132\', \'2025-01-13\', \'213\', \'2025-01-13\', \'112321\', \'2025-01-13\', \'2025-01-13\', \'2e23\', \'12321\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `transaksikalibrasi` (`IdKalibrasi`, `TransType`, `Petugas`, `Alat`, `NoSPMB`, `TglSPMB`, `NoSPK`, `TglSPK`, `Vendor`, `TglKalibrasi`, `TglExpire`, `NoDokumen`, `Status`) VALUES (\'0073\', \'Kalibrasi Internal\', \'PT001\', \'L001\', \'2132\', \'2025-01-13\', \'213\', \'2025-01-13\', \'112321\', \'2025-01-13\', \'2025-01-13\', \'2e23\', \'12321\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `transaksikalibrasi` (`IdKalibrasi`, `TransType`, `Petugas`, `Alat`, `NoSPMB`, `TglSPMB`, `NoSPK`, `TglSPK`, `Vendor`, `TglKalibrasi`, `TglExpire`, `NoDokumen`, `Status`) VALUES (\'0073\', \'Kalibrasi Internal\', \'PT001\', \'L001\', \'2132\', \'2025-01-13\', \'213\', \'2025-01-13\', \'112321\', \'2025-01-13\', \'2025-01-13\', \'2e23\', \'12321\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `transaksikalibrasi` (`IdKalibrasi`, `TransType`, `Petugas`, `Alat`, `NoSPMB`, `TglSPMB`, `NoSPK`, `TglSPK`, `Vendor`, `TglKalibrasi`, `TglExpire`, `NoDokumen`, `Status`) VALUES (:IdKalibrasi:, :TransType:, :Petugas:, :Alat:, :NoSPMB:, :TglSPMB:, :NoSPK:, :TglSPK:, :Vendor:, :TglKalibrasi:, :TglExpire:, :NoDokumen:, :Status:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\TransaksiController.php(148): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TransaksiController->store()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\kelola data kalibrasi 0071\\public\\index.php')
+INFO - 2025-01-13 07:25:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 07:26:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 07:26:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-01-13 07:26:03 --> ErrorException: foreach() argument must be of type array|object, string given
+[Method: GET, Route: transaksi/create]
+in APPPATH\Views\transaksi\create.php on line 12.
+ 1 APPPATH\Views\transaksi\create.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'D:\\xampp\\htdocs\\kelola data kalibrasi 0071\\app\\Views\\transaksi\\create.php', 12)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\xampp\\htdocs\\kelola data kalibrasi 0071\\app\\Views\\transaksi\\create.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('transaksi/create', [], true)
+ 5 APPPATH\Controllers\TransaksiController.php(36): view('transaksi/create', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TransaksiController->create()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\kelola data kalibrasi 0071\\public\\index.php')
+INFO - 2025-01-13 07:26:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 07:26:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 07:26:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 07:26:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 07:27:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 07:27:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 07:27:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 07:29:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 07:29:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-01-13 07:35:25 --> mysqli_sql_exception: Duplicate entry '8787' for key 'PRIMARY' in D:\xampp\htdocs\kelola data kalibrasi 0071\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `tr...', 0)
+#1 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tr...')
+#2 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tr...')
+#3 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tr...', Array, false)
+#4 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\xampp\htdocs\kelola data kalibrasi 0071\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\xampp\htdocs\kelola data kalibrasi 0071\app\Controllers\TransaksiController.php(148): CodeIgniter\Model->insert(Array)
+#8 D:\xampp\htdocs\kelola data kalibrasi 0071\system\CodeIgniter.php(933): App\Controllers\TransaksiController->store()
+#9 D:\xampp\htdocs\kelola data kalibrasi 0071\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+#10 D:\xampp\htdocs\kelola data kalibrasi 0071\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\xampp\htdocs\kelola data kalibrasi 0071\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 D:\xampp\htdocs\kelola data kalibrasi 0071\system\rewrite.php(44): require_once('D:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2025-01-13 07:35:25 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '8787' for key 'PRIMARY'
+[Method: POST, Route: transaksi/store]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `transaksikalibrasi` (`IdKalibrasi`, `TransType`, `Petugas`, `Alat`, `NoSPMB`, `TglSPMB`, `NoSPK`, `TglSPK`, `Vendor`, `TglKalibrasi`, `TglExpire`, `NoDokumen`, `Status`) VALUES (:IdKalibrasi:, :TransType:, :Petugas:, :Alat:, :NoSPMB:, :TglSPMB:, :NoSPK:, :TglSPK:, :Vendor:, :TglKalibrasi:, :TglExpire:, :NoDokumen:, :Status:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\TransaksiController.php(148): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TransaksiController->store()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\kelola data kalibrasi 0071\\public\\index.php')
+CRITICAL - 2025-01-13 07:35:25 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '8787' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `transaksikalibrasi` (`IdKalibrasi`, `TransType`, `Petugas`, `Alat`, `NoSPMB`, `TglSPMB`, `NoSPK`, `TglSPK`, `Vendor`, `TglKalibrasi`, `TglExpire`, `NoDokumen`, `Status`) VALUES (\'8787\', \'Kalibrasi Internal\', \'PT001\', \'L001\', \'121\', \'2025-01-16\', \'212321\', \'2025-01-01\', \'bnb\', \'2025-01-13\', \'2025-01-13\', \'21323213\', \'cdcvedfv\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `transaksikalibrasi` (`IdKalibrasi`, `TransType`, `Petugas`, `Alat`, `NoSPMB`, `TglSPMB`, `NoSPK`, `TglSPK`, `Vendor`, `TglKalibrasi`, `TglExpire`, `NoDokumen`, `Status`) VALUES (\'8787\', \'Kalibrasi Internal\', \'PT001\', \'L001\', \'121\', \'2025-01-16\', \'212321\', \'2025-01-01\', \'bnb\', \'2025-01-13\', \'2025-01-13\', \'21323213\', \'cdcvedfv\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `transaksikalibrasi` (`IdKalibrasi`, `TransType`, `Petugas`, `Alat`, `NoSPMB`, `TglSPMB`, `NoSPK`, `TglSPK`, `Vendor`, `TglKalibrasi`, `TglExpire`, `NoDokumen`, `Status`) VALUES (:IdKalibrasi:, :TransType:, :Petugas:, :Alat:, :NoSPMB:, :TglSPMB:, :NoSPK:, :TglSPK:, :Vendor:, :TglKalibrasi:, :TglExpire:, :NoDokumen:, :Status:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\TransaksiController.php(148): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TransaksiController->store()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\kelola data kalibrasi 0071\\public\\index.php')
+CRITICAL - 2025-01-13 07:35:25 --> [Caused by] mysqli_sql_exception: Duplicate entry '8787' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `transaksikalibrasi` (`IdKalibrasi`, `TransType`, `Petugas`, `Alat`, `NoSPMB`, `TglSPMB`, `NoSPK`, `TglSPK`, `Vendor`, `TglKalibrasi`, `TglExpire`, `NoDokumen`, `Status`) VALUES (\'8787\', \'Kalibrasi Internal\', \'PT001\', \'L001\', \'121\', \'2025-01-16\', \'212321\', \'2025-01-01\', \'bnb\', \'2025-01-13\', \'2025-01-13\', \'21323213\', \'cdcvedfv\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `transaksikalibrasi` (`IdKalibrasi`, `TransType`, `Petugas`, `Alat`, `NoSPMB`, `TglSPMB`, `NoSPK`, `TglSPK`, `Vendor`, `TglKalibrasi`, `TglExpire`, `NoDokumen`, `Status`) VALUES (\'8787\', \'Kalibrasi Internal\', \'PT001\', \'L001\', \'121\', \'2025-01-16\', \'212321\', \'2025-01-01\', \'bnb\', \'2025-01-13\', \'2025-01-13\', \'21323213\', \'cdcvedfv\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `transaksikalibrasi` (`IdKalibrasi`, `TransType`, `Petugas`, `Alat`, `NoSPMB`, `TglSPMB`, `NoSPK`, `TglSPK`, `Vendor`, `TglKalibrasi`, `TglExpire`, `NoDokumen`, `Status`) VALUES (\'8787\', \'Kalibrasi Internal\', \'PT001\', \'L001\', \'121\', \'2025-01-16\', \'212321\', \'2025-01-01\', \'bnb\', \'2025-01-13\', \'2025-01-13\', \'21323213\', \'cdcvedfv\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `transaksikalibrasi` (`IdKalibrasi`, `TransType`, `Petugas`, `Alat`, `NoSPMB`, `TglSPMB`, `NoSPK`, `TglSPK`, `Vendor`, `TglKalibrasi`, `TglExpire`, `NoDokumen`, `Status`) VALUES (:IdKalibrasi:, :TransType:, :Petugas:, :Alat:, :NoSPMB:, :TglSPMB:, :NoSPK:, :TglSPK:, :Vendor:, :TglKalibrasi:, :TglExpire:, :NoDokumen:, :Status:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\TransaksiController.php(148): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TransaksiController->store()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\kelola data kalibrasi 0071\\public\\index.php')
+INFO - 2025-01-13 07:35:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-01-13 07:36:16 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`kalibrasi_0071`.`transaksikalibrasi`, CONSTRAINT `transaksikalibrasi_ibfk_1` FOREIGN KEY (`Petugas`) REFERENCES `petugas` (`IdPetugas`)) in D:\xampp\htdocs\kelola data kalibrasi 0071\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `tr...', 0)
+#1 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tr...')
+#2 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tr...')
+#3 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tr...', Array, false)
+#4 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\xampp\htdocs\kelola data kalibrasi 0071\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\xampp\htdocs\kelola data kalibrasi 0071\app\Controllers\TransaksiController.php(148): CodeIgniter\Model->insert(Array)
+#8 D:\xampp\htdocs\kelola data kalibrasi 0071\system\CodeIgniter.php(933): App\Controllers\TransaksiController->store()
+#9 D:\xampp\htdocs\kelola data kalibrasi 0071\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+#10 D:\xampp\htdocs\kelola data kalibrasi 0071\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\xampp\htdocs\kelola data kalibrasi 0071\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 D:\xampp\htdocs\kelola data kalibrasi 0071\system\rewrite.php(44): require_once('D:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2025-01-13 07:36:16 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`kalibrasi_0071`.`transaksikalibrasi`, CONSTRAINT `transaksikalibrasi_ibfk_1` FOREIGN KEY (`Petugas`) REFERENCES `petugas` (`IdPetugas`))
+[Method: POST, Route: transaksi/store]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `transaksikalibrasi` (`IdKalibrasi`, `TransType`, `Petugas`, `Alat`, `NoSPMB`, `TglSPMB`, `NoSPK`, `TglSPK`, `Vendor`, `TglKalibrasi`, `TglExpire`, `NoDokumen`, `Status`) VALUES (:IdKalibrasi:, :TransType:, :Petugas:, :Alat:, :NoSPMB:, :TglSPMB:, :NoSPK:, :TglSPK:, :Vendor:, :TglKalibrasi:, :TglExpire:, :NoDokumen:, :Status:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\TransaksiController.php(148): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TransaksiController->store()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\kelola data kalibrasi 0071\\public\\index.php')
+CRITICAL - 2025-01-13 07:36:16 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`kalibrasi_0071`.`transaksikalibrasi`, CONSTRAINT `transaksikalibrasi_ibfk_1` FOREIGN KEY (`Petugas`) REFERENCES `petugas` (`IdPetugas`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `transaksikalibrasi` (`IdKalibrasi`, `TransType`, `Petugas`, `Alat`, `NoSPMB`, `TglSPMB`, `NoSPK`, `TglSPK`, `Vendor`, `TglKalibrasi`, `TglExpire`, `NoDokumen`, `Status`) VALUES (\'7654\', \'Kalibrasi Internal\', \'008\', \'njhj\', \'7787\', \'2025-01-16\', \'665\', \'2025-01-01\', \'ppp\', \'2025-01-13\', \'2025-01-13\', \'7878\', \'hdhd\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `transaksikalibrasi` (`IdKalibrasi`, `TransType`, `Petugas`, `Alat`, `NoSPMB`, `TglSPMB`, `NoSPK`, `TglSPK`, `Vendor`, `TglKalibrasi`, `TglExpire`, `NoDokumen`, `Status`) VALUES (\'7654\', \'Kalibrasi Internal\', \'008\', \'njhj\', \'7787\', \'2025-01-16\', \'665\', \'2025-01-01\', \'ppp\', \'2025-01-13\', \'2025-01-13\', \'7878\', \'hdhd\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `transaksikalibrasi` (`IdKalibrasi`, `TransType`, `Petugas`, `Alat`, `NoSPMB`, `TglSPMB`, `NoSPK`, `TglSPK`, `Vendor`, `TglKalibrasi`, `TglExpire`, `NoDokumen`, `Status`) VALUES (:IdKalibrasi:, :TransType:, :Petugas:, :Alat:, :NoSPMB:, :TglSPMB:, :NoSPK:, :TglSPK:, :Vendor:, :TglKalibrasi:, :TglExpire:, :NoDokumen:, :Status:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\TransaksiController.php(148): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TransaksiController->store()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\kelola data kalibrasi 0071\\public\\index.php')
+CRITICAL - 2025-01-13 07:36:16 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`kalibrasi_0071`.`transaksikalibrasi`, CONSTRAINT `transaksikalibrasi_ibfk_1` FOREIGN KEY (`Petugas`) REFERENCES `petugas` (`IdPetugas`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `transaksikalibrasi` (`IdKalibrasi`, `TransType`, `Petugas`, `Alat`, `NoSPMB`, `TglSPMB`, `NoSPK`, `TglSPK`, `Vendor`, `TglKalibrasi`, `TglExpire`, `NoDokumen`, `Status`) VALUES (\'7654\', \'Kalibrasi Internal\', \'008\', \'njhj\', \'7787\', \'2025-01-16\', \'665\', \'2025-01-01\', \'ppp\', \'2025-01-13\', \'2025-01-13\', \'7878\', \'hdhd\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `transaksikalibrasi` (`IdKalibrasi`, `TransType`, `Petugas`, `Alat`, `NoSPMB`, `TglSPMB`, `NoSPK`, `TglSPK`, `Vendor`, `TglKalibrasi`, `TglExpire`, `NoDokumen`, `Status`) VALUES (\'7654\', \'Kalibrasi Internal\', \'008\', \'njhj\', \'7787\', \'2025-01-16\', \'665\', \'2025-01-01\', \'ppp\', \'2025-01-13\', \'2025-01-13\', \'7878\', \'hdhd\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `transaksikalibrasi` (`IdKalibrasi`, `TransType`, `Petugas`, `Alat`, `NoSPMB`, `TglSPMB`, `NoSPK`, `TglSPK`, `Vendor`, `TglKalibrasi`, `TglExpire`, `NoDokumen`, `Status`) VALUES (\'7654\', \'Kalibrasi Internal\', \'008\', \'njhj\', \'7787\', \'2025-01-16\', \'665\', \'2025-01-01\', \'ppp\', \'2025-01-13\', \'2025-01-13\', \'7878\', \'hdhd\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `transaksikalibrasi` (`IdKalibrasi`, `TransType`, `Petugas`, `Alat`, `NoSPMB`, `TglSPMB`, `NoSPK`, `TglSPK`, `Vendor`, `TglKalibrasi`, `TglExpire`, `NoDokumen`, `Status`) VALUES (:IdKalibrasi:, :TransType:, :Petugas:, :Alat:, :NoSPMB:, :TglSPMB:, :NoSPK:, :TglSPK:, :Vendor:, :TglKalibrasi:, :TglExpire:, :NoDokumen:, :Status:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\TransaksiController.php(148): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TransaksiController->store()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\kelola data kalibrasi 0071\\public\\index.php')
+INFO - 2025-01-13 07:36:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-01-13 07:36:56 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`kalibrasi_0071`.`transaksikalibrasi`, CONSTRAINT `transaksikalibrasi_ibfk_2` FOREIGN KEY (`Alat`) REFERENCES `alat` (`IdAlat`)) in D:\xampp\htdocs\kelola data kalibrasi 0071\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `tr...', 0)
+#1 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tr...')
+#2 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tr...')
+#3 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tr...', Array, false)
+#4 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\xampp\htdocs\kelola data kalibrasi 0071\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\xampp\htdocs\kelola data kalibrasi 0071\app\Controllers\TransaksiController.php(148): CodeIgniter\Model->insert(Array)
+#8 D:\xampp\htdocs\kelola data kalibrasi 0071\system\CodeIgniter.php(933): App\Controllers\TransaksiController->store()
+#9 D:\xampp\htdocs\kelola data kalibrasi 0071\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+#10 D:\xampp\htdocs\kelola data kalibrasi 0071\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\xampp\htdocs\kelola data kalibrasi 0071\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 D:\xampp\htdocs\kelola data kalibrasi 0071\system\rewrite.php(44): require_once('D:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2025-01-13 07:36:56 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`kalibrasi_0071`.`transaksikalibrasi`, CONSTRAINT `transaksikalibrasi_ibfk_2` FOREIGN KEY (`Alat`) REFERENCES `alat` (`IdAlat`))
+[Method: POST, Route: transaksi/store]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `transaksikalibrasi` (`IdKalibrasi`, `TransType`, `Petugas`, `Alat`, `NoSPMB`, `TglSPMB`, `NoSPK`, `TglSPK`, `Vendor`, `TglKalibrasi`, `TglExpire`, `NoDokumen`, `Status`) VALUES (:IdKalibrasi:, :TransType:, :Petugas:, :Alat:, :NoSPMB:, :TglSPMB:, :NoSPK:, :TglSPK:, :Vendor:, :TglKalibrasi:, :TglExpire:, :NoDokumen:, :Status:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\TransaksiController.php(148): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TransaksiController->store()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\kelola data kalibrasi 0071\\public\\index.php')
+CRITICAL - 2025-01-13 07:36:56 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`kalibrasi_0071`.`transaksikalibrasi`, CONSTRAINT `transaksikalibrasi_ibfk_2` FOREIGN KEY (`Alat`) REFERENCES `alat` (`IdAlat`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `transaksikalibrasi` (`IdKalibrasi`, `TransType`, `Petugas`, `Alat`, `NoSPMB`, `TglSPMB`, `NoSPK`, `TglSPK`, `Vendor`, `TglKalibrasi`, `TglExpire`, `NoDokumen`, `Status`) VALUES (\'7654\', \'Kalibrasi Internal\', \'PT001\', \'njhj\', \'7787\', \'2025-01-16\', \'665\', \'2025-01-01\', \'ppp\', \'2025-01-13\', \'2025-01-13\', \'7878\', \'hdhd\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `transaksikalibrasi` (`IdKalibrasi`, `TransType`, `Petugas`, `Alat`, `NoSPMB`, `TglSPMB`, `NoSPK`, `TglSPK`, `Vendor`, `TglKalibrasi`, `TglExpire`, `NoDokumen`, `Status`) VALUES (\'7654\', \'Kalibrasi Internal\', \'PT001\', \'njhj\', \'7787\', \'2025-01-16\', \'665\', \'2025-01-01\', \'ppp\', \'2025-01-13\', \'2025-01-13\', \'7878\', \'hdhd\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `transaksikalibrasi` (`IdKalibrasi`, `TransType`, `Petugas`, `Alat`, `NoSPMB`, `TglSPMB`, `NoSPK`, `TglSPK`, `Vendor`, `TglKalibrasi`, `TglExpire`, `NoDokumen`, `Status`) VALUES (:IdKalibrasi:, :TransType:, :Petugas:, :Alat:, :NoSPMB:, :TglSPMB:, :NoSPK:, :TglSPK:, :Vendor:, :TglKalibrasi:, :TglExpire:, :NoDokumen:, :Status:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\TransaksiController.php(148): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TransaksiController->store()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\kelola data kalibrasi 0071\\public\\index.php')
+CRITICAL - 2025-01-13 07:36:56 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`kalibrasi_0071`.`transaksikalibrasi`, CONSTRAINT `transaksikalibrasi_ibfk_2` FOREIGN KEY (`Alat`) REFERENCES `alat` (`IdAlat`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `transaksikalibrasi` (`IdKalibrasi`, `TransType`, `Petugas`, `Alat`, `NoSPMB`, `TglSPMB`, `NoSPK`, `TglSPK`, `Vendor`, `TglKalibrasi`, `TglExpire`, `NoDokumen`, `Status`) VALUES (\'7654\', \'Kalibrasi Internal\', \'PT001\', \'njhj\', \'7787\', \'2025-01-16\', \'665\', \'2025-01-01\', \'ppp\', \'2025-01-13\', \'2025-01-13\', \'7878\', \'hdhd\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `transaksikalibrasi` (`IdKalibrasi`, `TransType`, `Petugas`, `Alat`, `NoSPMB`, `TglSPMB`, `NoSPK`, `TglSPK`, `Vendor`, `TglKalibrasi`, `TglExpire`, `NoDokumen`, `Status`) VALUES (\'7654\', \'Kalibrasi Internal\', \'PT001\', \'njhj\', \'7787\', \'2025-01-16\', \'665\', \'2025-01-01\', \'ppp\', \'2025-01-13\', \'2025-01-13\', \'7878\', \'hdhd\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `transaksikalibrasi` (`IdKalibrasi`, `TransType`, `Petugas`, `Alat`, `NoSPMB`, `TglSPMB`, `NoSPK`, `TglSPK`, `Vendor`, `TglKalibrasi`, `TglExpire`, `NoDokumen`, `Status`) VALUES (\'7654\', \'Kalibrasi Internal\', \'PT001\', \'njhj\', \'7787\', \'2025-01-16\', \'665\', \'2025-01-01\', \'ppp\', \'2025-01-13\', \'2025-01-13\', \'7878\', \'hdhd\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `transaksikalibrasi` (`IdKalibrasi`, `TransType`, `Petugas`, `Alat`, `NoSPMB`, `TglSPMB`, `NoSPK`, `TglSPK`, `Vendor`, `TglKalibrasi`, `TglExpire`, `NoDokumen`, `Status`) VALUES (:IdKalibrasi:, :TransType:, :Petugas:, :Alat:, :NoSPMB:, :TglSPMB:, :NoSPK:, :TglSPK:, :Vendor:, :TglKalibrasi:, :TglExpire:, :NoDokumen:, :Status:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\TransaksiController.php(148): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TransaksiController->store()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\kelola data kalibrasi 0071\\public\\index.php')
+INFO - 2025-01-13 07:37:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 07:38:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 07:39:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-01-13 07:40:31 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`kalibrasi_0071`.`transaksikalibrasi`, CONSTRAINT `transaksikalibrasi_ibfk_3` FOREIGN KEY (`Vendor`) REFERENCES `vendor` (`IdVendor`)) in D:\xampp\htdocs\kelola data kalibrasi 0071\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `tr...', 0)
+#1 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tr...')
+#2 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tr...')
+#3 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tr...', Array, false)
+#4 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\xampp\htdocs\kelola data kalibrasi 0071\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\xampp\htdocs\kelola data kalibrasi 0071\app\Controllers\TransaksiController.php(148): CodeIgniter\Model->insert(Array)
+#8 D:\xampp\htdocs\kelola data kalibrasi 0071\system\CodeIgniter.php(933): App\Controllers\TransaksiController->store()
+#9 D:\xampp\htdocs\kelola data kalibrasi 0071\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+#10 D:\xampp\htdocs\kelola data kalibrasi 0071\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\xampp\htdocs\kelola data kalibrasi 0071\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 D:\xampp\htdocs\kelola data kalibrasi 0071\system\rewrite.php(44): require_once('D:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2025-01-13 07:40:31 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`kalibrasi_0071`.`transaksikalibrasi`, CONSTRAINT `transaksikalibrasi_ibfk_3` FOREIGN KEY (`Vendor`) REFERENCES `vendor` (`IdVendor`))
+[Method: POST, Route: transaksi/store]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `transaksikalibrasi` (`IdKalibrasi`, `TransType`, `Petugas`, `Alat`, `NoSPMB`, `TglSPMB`, `NoSPK`, `TglSPK`, `Vendor`, `TglKalibrasi`, `TglExpire`, `NoDokumen`, `Status`) VALUES (:IdKalibrasi:, :TransType:, :Petugas:, :Alat:, :NoSPMB:, :TglSPMB:, :NoSPK:, :TglSPK:, :Vendor:, :TglKalibrasi:, :TglExpire:, :NoDokumen:, :Status:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\TransaksiController.php(148): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TransaksiController->store()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\kelola data kalibrasi 0071\\public\\index.php')
+CRITICAL - 2025-01-13 07:40:31 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`kalibrasi_0071`.`transaksikalibrasi`, CONSTRAINT `transaksikalibrasi_ibfk_3` FOREIGN KEY (`Vendor`) REFERENCES `vendor` (`IdVendor`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `transaksikalibrasi` (`IdKalibrasi`, `TransType`, `Petugas`, `Alat`, `NoSPMB`, `TglSPMB`, `NoSPK`, `TglSPK`, `Vendor`, `TglKalibrasi`, `TglExpire`, `NoDokumen`, `Status`) VALUES (\'445\', \'Kalibrasi Internal\', \'PT001\', \'L001\', \'8997\', \'2025-01-13\', \'908\', \'2025-01-13\', \'yudmd\', \'2025-01-13\', \'2025-01-13\', \'7878\', \'12321\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `transaksikalibrasi` (`IdKalibrasi`, `TransType`, `Petugas`, `Alat`, `NoSPMB`, `TglSPMB`, `NoSPK`, `TglSPK`, `Vendor`, `TglKalibrasi`, `TglExpire`, `NoDokumen`, `Status`) VALUES (\'445\', \'Kalibrasi Internal\', \'PT001\', \'L001\', \'8997\', \'2025-01-13\', \'908\', \'2025-01-13\', \'yudmd\', \'2025-01-13\', \'2025-01-13\', \'7878\', \'12321\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `transaksikalibrasi` (`IdKalibrasi`, `TransType`, `Petugas`, `Alat`, `NoSPMB`, `TglSPMB`, `NoSPK`, `TglSPK`, `Vendor`, `TglKalibrasi`, `TglExpire`, `NoDokumen`, `Status`) VALUES (:IdKalibrasi:, :TransType:, :Petugas:, :Alat:, :NoSPMB:, :TglSPMB:, :NoSPK:, :TglSPK:, :Vendor:, :TglKalibrasi:, :TglExpire:, :NoDokumen:, :Status:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\TransaksiController.php(148): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TransaksiController->store()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\kelola data kalibrasi 0071\\public\\index.php')
+CRITICAL - 2025-01-13 07:40:31 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`kalibrasi_0071`.`transaksikalibrasi`, CONSTRAINT `transaksikalibrasi_ibfk_3` FOREIGN KEY (`Vendor`) REFERENCES `vendor` (`IdVendor`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `transaksikalibrasi` (`IdKalibrasi`, `TransType`, `Petugas`, `Alat`, `NoSPMB`, `TglSPMB`, `NoSPK`, `TglSPK`, `Vendor`, `TglKalibrasi`, `TglExpire`, `NoDokumen`, `Status`) VALUES (\'445\', \'Kalibrasi Internal\', \'PT001\', \'L001\', \'8997\', \'2025-01-13\', \'908\', \'2025-01-13\', \'yudmd\', \'2025-01-13\', \'2025-01-13\', \'7878\', \'12321\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `transaksikalibrasi` (`IdKalibrasi`, `TransType`, `Petugas`, `Alat`, `NoSPMB`, `TglSPMB`, `NoSPK`, `TglSPK`, `Vendor`, `TglKalibrasi`, `TglExpire`, `NoDokumen`, `Status`) VALUES (\'445\', \'Kalibrasi Internal\', \'PT001\', \'L001\', \'8997\', \'2025-01-13\', \'908\', \'2025-01-13\', \'yudmd\', \'2025-01-13\', \'2025-01-13\', \'7878\', \'12321\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `transaksikalibrasi` (`IdKalibrasi`, `TransType`, `Petugas`, `Alat`, `NoSPMB`, `TglSPMB`, `NoSPK`, `TglSPK`, `Vendor`, `TglKalibrasi`, `TglExpire`, `NoDokumen`, `Status`) VALUES (\'445\', \'Kalibrasi Internal\', \'PT001\', \'L001\', \'8997\', \'2025-01-13\', \'908\', \'2025-01-13\', \'yudmd\', \'2025-01-13\', \'2025-01-13\', \'7878\', \'12321\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `transaksikalibrasi` (`IdKalibrasi`, `TransType`, `Petugas`, `Alat`, `NoSPMB`, `TglSPMB`, `NoSPK`, `TglSPK`, `Vendor`, `TglKalibrasi`, `TglExpire`, `NoDokumen`, `Status`) VALUES (:IdKalibrasi:, :TransType:, :Petugas:, :Alat:, :NoSPMB:, :TglSPMB:, :NoSPK:, :TglSPK:, :Vendor:, :TglKalibrasi:, :TglExpire:, :NoDokumen:, :Status:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\TransaksiController.php(148): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TransaksiController->store()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\kelola data kalibrasi 0071\\public\\index.php')
+INFO - 2025-01-13 07:40:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 07:40:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 07:40:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 07:41:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 07:54:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 07:54:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 07:55:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 07:55:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 07:56:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 07:56:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 07:56:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 07:57:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 07:57:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 07:57:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 07:57:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-01-13 07:58:21 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`kalibrasi_0071`.`transaksikalibrasi`, CONSTRAINT `transaksikalibrasi_ibfk_3` FOREIGN KEY (`Vendor`) REFERENCES `vendor` (`IdVendor`)) in D:\xampp\htdocs\kelola data kalibrasi 0071\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Database\MySQLi\Connection.php(312): mysqli->query('UPDATE `transak...', 0)
+#1 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `transak...')
+#2 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `transak...')
+#3 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Database\BaseBuilder.php(2516): CodeIgniter\Database\BaseConnection->query('UPDATE `transak...', Array, false)
+#4 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+#5 D:\xampp\htdocs\kelola data kalibrasi 0071\system\BaseModel.php(1028): CodeIgniter\Model->doUpdate(Array, Array)
+#6 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Model.php(865): CodeIgniter\BaseModel->update(Array, Array)
+#7 D:\xampp\htdocs\kelola data kalibrasi 0071\app\Controllers\TransaksiController.php(284): CodeIgniter\Model->update('445', Array)
+#8 D:\xampp\htdocs\kelola data kalibrasi 0071\system\CodeIgniter.php(933): App\Controllers\TransaksiController->update('445')
+#9 D:\xampp\htdocs\kelola data kalibrasi 0071\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+#10 D:\xampp\htdocs\kelola data kalibrasi 0071\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\xampp\htdocs\kelola data kalibrasi 0071\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 D:\xampp\htdocs\kelola data kalibrasi 0071\system\rewrite.php(44): require_once('D:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2025-01-13 07:58:21 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`kalibrasi_0071`.`transaksikalibrasi`, CONSTRAINT `transaksikalibrasi_ibfk_3` FOREIGN KEY (`Vendor`) REFERENCES `vendor` (`IdVendor`))
+[Method: POST, Route: transaksi/update/445]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2516): CodeIgniter\Database\BaseConnection->query('UPDATE `transaksikalibrasi` SET `IdKalibrasi` = :IdKalibrasi:, `TransType` = :TransType:, `Petugas` = :Petugas:, `Alat` = :Alat:, `NoSPMB` = :NoSPMB:, `TglSPMB` = :TglSPMB:, `NoSPK` = :NoSPK:, `TglSPK` = :TglSPK:, `Vendor` = :Vendor:, `TglKalibrasi` = :TglKalibrasi:, `TglExpire` = :TglExpire:, `NoDokumen` = :NoDokumen:, `Status` = :Status:
+WHERE `transaksikalibrasi`.`IdKalibrasi` IN :transaksikalibrasi.IdKalibrasi:', [...], false)
+ 2 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH\BaseModel.php(1028): CodeIgniter\Model->doUpdate([...], [...])
+ 4 SYSTEMPATH\Model.php(865): CodeIgniter\BaseModel->update([...], [...])
+ 5 APPPATH\Controllers\TransaksiController.php(284): CodeIgniter\Model->update('445', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TransaksiController->update('445')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\kelola data kalibrasi 0071\\public\\index.php')
+CRITICAL - 2025-01-13 07:58:21 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`kalibrasi_0071`.`transaksikalibrasi`, CONSTRAINT `transaksikalibrasi_ibfk_3` FOREIGN KEY (`Vendor`) REFERENCES `vendor` (`IdVendor`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `transaksikalibrasi` SET `IdKalibrasi` = \'445\', `TransType` = \'Kalibrasi Internal\', `Petugas` = \'PT001\', `Alat` = \'L001\', `NoSPMB` = \'8997\', `TglSPMB` = \'2025-01-13\', `NoSPK` = \'908\', `TglSPK` = \'2025-01-13\', `Vendor` = \'nbbbbbbbbb\', `TglKalibrasi` = \'2025-01-13\', `TglExpire` = \'2025-01-13\', `NoDokumen` = \'7878\', `Status` = \'1\'
+WHERE `transaksikalibrasi`.`IdKalibrasi` IN (\'445\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `transaksikalibrasi` SET `IdKalibrasi` = \'445\', `TransType` = \'Kalibrasi Internal\', `Petugas` = \'PT001\', `Alat` = \'L001\', `NoSPMB` = \'8997\', `TglSPMB` = \'2025-01-13\', `NoSPK` = \'908\', `TglSPK` = \'2025-01-13\', `Vendor` = \'nbbbbbbbbb\', `TglKalibrasi` = \'2025-01-13\', `TglExpire` = \'2025-01-13\', `NoDokumen` = \'7878\', `Status` = \'1\'
+WHERE `transaksikalibrasi`.`IdKalibrasi` IN (\'445\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2516): CodeIgniter\Database\BaseConnection->query('UPDATE `transaksikalibrasi` SET `IdKalibrasi` = :IdKalibrasi:, `TransType` = :TransType:, `Petugas` = :Petugas:, `Alat` = :Alat:, `NoSPMB` = :NoSPMB:, `TglSPMB` = :TglSPMB:, `NoSPK` = :NoSPK:, `TglSPK` = :TglSPK:, `Vendor` = :Vendor:, `TglKalibrasi` = :TglKalibrasi:, `TglExpire` = :TglExpire:, `NoDokumen` = :NoDokumen:, `Status` = :Status:
+WHERE `transaksikalibrasi`.`IdKalibrasi` IN :transaksikalibrasi.IdKalibrasi:', [...], false)
+ 4 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH\BaseModel.php(1028): CodeIgniter\Model->doUpdate([...], [...])
+ 6 SYSTEMPATH\Model.php(865): CodeIgniter\BaseModel->update([...], [...])
+ 7 APPPATH\Controllers\TransaksiController.php(284): CodeIgniter\Model->update('445', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TransaksiController->update('445')
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\kelola data kalibrasi 0071\\public\\index.php')
+CRITICAL - 2025-01-13 07:58:21 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`kalibrasi_0071`.`transaksikalibrasi`, CONSTRAINT `transaksikalibrasi_ibfk_3` FOREIGN KEY (`Vendor`) REFERENCES `vendor` (`IdVendor`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('UPDATE `transaksikalibrasi` SET `IdKalibrasi` = \'445\', `TransType` = \'Kalibrasi Internal\', `Petugas` = \'PT001\', `Alat` = \'L001\', `NoSPMB` = \'8997\', `TglSPMB` = \'2025-01-13\', `NoSPK` = \'908\', `TglSPK` = \'2025-01-13\', `Vendor` = \'nbbbbbbbbb\', `TglKalibrasi` = \'2025-01-13\', `TglExpire` = \'2025-01-13\', `NoDokumen` = \'7878\', `Status` = \'1\'
+WHERE `transaksikalibrasi`.`IdKalibrasi` IN (\'445\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `transaksikalibrasi` SET `IdKalibrasi` = \'445\', `TransType` = \'Kalibrasi Internal\', `Petugas` = \'PT001\', `Alat` = \'L001\', `NoSPMB` = \'8997\', `TglSPMB` = \'2025-01-13\', `NoSPK` = \'908\', `TglSPK` = \'2025-01-13\', `Vendor` = \'nbbbbbbbbb\', `TglKalibrasi` = \'2025-01-13\', `TglExpire` = \'2025-01-13\', `NoDokumen` = \'7878\', `Status` = \'1\'
+WHERE `transaksikalibrasi`.`IdKalibrasi` IN (\'445\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `transaksikalibrasi` SET `IdKalibrasi` = \'445\', `TransType` = \'Kalibrasi Internal\', `Petugas` = \'PT001\', `Alat` = \'L001\', `NoSPMB` = \'8997\', `TglSPMB` = \'2025-01-13\', `NoSPK` = \'908\', `TglSPK` = \'2025-01-13\', `Vendor` = \'nbbbbbbbbb\', `TglKalibrasi` = \'2025-01-13\', `TglExpire` = \'2025-01-13\', `NoDokumen` = \'7878\', `Status` = \'1\'
+WHERE `transaksikalibrasi`.`IdKalibrasi` IN (\'445\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2516): CodeIgniter\Database\BaseConnection->query('UPDATE `transaksikalibrasi` SET `IdKalibrasi` = :IdKalibrasi:, `TransType` = :TransType:, `Petugas` = :Petugas:, `Alat` = :Alat:, `NoSPMB` = :NoSPMB:, `TglSPMB` = :TglSPMB:, `NoSPK` = :NoSPK:, `TglSPK` = :TglSPK:, `Vendor` = :Vendor:, `TglKalibrasi` = :TglKalibrasi:, `TglExpire` = :TglExpire:, `NoDokumen` = :NoDokumen:, `Status` = :Status:
+WHERE `transaksikalibrasi`.`IdKalibrasi` IN :transaksikalibrasi.IdKalibrasi:', [...], false)
+ 5 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(1028): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(865): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\TransaksiController.php(284): CodeIgniter\Model->update('445', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TransaksiController->update('445')
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\kelola data kalibrasi 0071\\public\\index.php')
+INFO - 2025-01-13 07:58:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 07:58:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 07:58:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 07:59:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 07:59:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 07:59:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:00:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:01:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:01:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-01-13 08:01:32 --> ErrorException: Undefined array key "Dokumen"
+[Method: DELETE, Route: transaksi/delete/8787]
+in APPPATH\Controllers\TransaksiController.php on line 302.
+ 1 APPPATH\Controllers\TransaksiController.php(302): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Dokumen"', 'D:\\xampp\\htdocs\\kelola data kalibrasi 0071\\app\\Controllers\\TransaksiController.php', 302)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TransaksiController->delete('8787')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\kelola data kalibrasi 0071\\public\\index.php')
+INFO - 2025-01-13 08:01:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:01:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:01:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:02:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:02:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:02:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:02:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:06:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:06:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:06:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:09:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:09:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:09:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:09:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:17:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:17:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:18:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:18:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:18:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:21:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:22:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:23:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:23:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:28:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:28:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:28:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:28:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:28:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:29:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:29:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:29:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:32:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:32:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:32:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:32:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:32:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:32:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:32:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:32:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:34:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:34:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:35:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:35:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:35:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:35:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:35:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:36:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:36:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:36:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:36:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:36:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:36:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:36:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:36:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:36:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:36:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:36:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:36:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:36:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:36:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:37:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:37:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:37:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:37:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:37:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:37:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:38:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:38:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:38:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:38:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:38:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-01-13 08:38:28 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "lopl,"
+[Method: GET, Route: lokasi/halEdit/lopl,]
+in SYSTEMPATH\Router\Router.php on line 737.
+ 1 SYSTEMPATH\Router\Router.php(204): CodeIgniter\Router\Router->checkDisallowedChars('lokasi/halEdit/lopl,')
+ 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('lokasi/halEdit/lopl,')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\kelola data kalibrasi 0071\\public\\index.php')
+INFO - 2025-01-13 08:38:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:38:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:38:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-01-13 08:38:45 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "lopl,"
+[Method: GET, Route: lokasi/halEdit/lopl,]
+in SYSTEMPATH\Router\Router.php on line 737.
+ 1 SYSTEMPATH\Router\Router.php(204): CodeIgniter\Router\Router->checkDisallowedChars('lokasi/halEdit/lopl,')
+ 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('lokasi/halEdit/lopl,')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\kelola data kalibrasi 0071\\public\\index.php')
+INFO - 2025-01-13 08:38:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:39:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:39:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:39:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:39:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-01-13 08:39:14 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "lopl,"
+[Method: GET, Route: lokasi/halEdit/lopl,]
+in SYSTEMPATH\Router\Router.php on line 737.
+ 1 SYSTEMPATH\Router\Router.php(204): CodeIgniter\Router\Router->checkDisallowedChars('lokasi/halEdit/lopl,')
+ 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('lokasi/halEdit/lopl,')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\kelola data kalibrasi 0071\\public\\index.php')
+INFO - 2025-01-13 08:39:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-01-13 08:39:33 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "lopl,"
+[Method: GET, Route: lokasi/halEdit/lopl,]
+in SYSTEMPATH\Router\Router.php on line 737.
+ 1 SYSTEMPATH\Router\Router.php(204): CodeIgniter\Router\Router->checkDisallowedChars('lokasi/halEdit/lopl,')
+ 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('lokasi/halEdit/lopl,')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\kelola data kalibrasi 0071\\public\\index.php')
+INFO - 2025-01-13 08:39:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-01-13 08:39:46 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "lopl,"
+[Method: DELETE, Route: lokasi/hapus/lopl,]
+in SYSTEMPATH\Router\Router.php on line 737.
+ 1 SYSTEMPATH\Router\Router.php(204): CodeIgniter\Router\Router->checkDisallowedChars('lokasi/hapus/lopl,')
+ 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('lokasi/hapus/lopl,')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\kelola data kalibrasi 0071\\public\\index.php')
+INFO - 2025-01-13 08:39:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:40:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:40:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:41:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:41:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:41:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:41:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:41:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:41:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:41:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:41:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:41:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:41:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:41:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:41:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:41:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:42:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:42:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:42:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:42:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:42:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:42:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:42:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:43:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:43:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:43:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:43:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:43:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:43:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:43:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:43:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:44:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:44:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:45:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:45:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:54:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:54:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:55:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:55:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:55:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:55:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:55:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:56:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 08:56:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 09:00:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 09:00:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 09:00:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 09:01:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 09:02:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 09:02:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 09:02:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-01-13 09:02:21 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`kalibrasi_0071`.`transaksikalibrasi`, CONSTRAINT `transaksikalibrasi_ibfk_2` FOREIGN KEY (`Alat`) REFERENCES `alat` (`IdAlat`)) in D:\xampp\htdocs\kelola data kalibrasi 0071\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Database\MySQLi\Connection.php(312): mysqli->query('DELETE FROM `al...', 0)
+#1 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `al...')
+#2 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `al...')
+#3 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Database\BaseBuilder.php(2843): CodeIgniter\Database\BaseConnection->query('DELETE FROM `al...', Array, false)
+#4 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Model.php(521): CodeIgniter\Database\BaseBuilder->delete()
+#5 D:\xampp\htdocs\kelola data kalibrasi 0071\system\BaseModel.php(1158): CodeIgniter\Model->doDelete(Array, false)
+#6 D:\xampp\htdocs\kelola data kalibrasi 0071\app\Controllers\AlatController.php(186): CodeIgniter\BaseModel->delete(Array)
+#7 D:\xampp\htdocs\kelola data kalibrasi 0071\system\CodeIgniter.php(933): App\Controllers\AlatController->hapusAlat('L001')
+#8 D:\xampp\htdocs\kelola data kalibrasi 0071\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlatController))
+#9 D:\xampp\htdocs\kelola data kalibrasi 0071\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\xampp\htdocs\kelola data kalibrasi 0071\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 D:\xampp\htdocs\kelola data kalibrasi 0071\system\rewrite.php(44): require_once('D:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2025-01-13 09:02:21 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot delete or update a parent row: a foreign key constraint fails (`kalibrasi_0071`.`transaksikalibrasi`, CONSTRAINT `transaksikalibrasi_ibfk_2` FOREIGN KEY (`Alat`) REFERENCES `alat` (`IdAlat`))
+[Method: DELETE, Route: alat/hapus/L001]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2843): CodeIgniter\Database\BaseConnection->query('DELETE FROM `alat`
+WHERE `IdAlat` IN :IdAlat:', [...], false)
+ 2 SYSTEMPATH\Model.php(521): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1158): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\AlatController.php(186): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AlatController->hapusAlat('L001')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlatController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\kelola data kalibrasi 0071\\public\\index.php')
+CRITICAL - 2025-01-13 09:02:21 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot delete or update a parent row: a foreign key constraint fails (`kalibrasi_0071`.`transaksikalibrasi`, CONSTRAINT `transaksikalibrasi_ibfk_2` FOREIGN KEY (`Alat`) REFERENCES `alat` (`IdAlat`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `alat`
+WHERE `IdAlat` IN (\'L001\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `alat`
+WHERE `IdAlat` IN (\'L001\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2843): CodeIgniter\Database\BaseConnection->query('DELETE FROM `alat`
+WHERE `IdAlat` IN :IdAlat:', [...], false)
+ 4 SYSTEMPATH\Model.php(521): CodeIgniter\Database\BaseBuilder->delete()
+ 5 SYSTEMPATH\BaseModel.php(1158): CodeIgniter\Model->doDelete([...], false)
+ 6 APPPATH\Controllers\AlatController.php(186): CodeIgniter\BaseModel->delete([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AlatController->hapusAlat('L001')
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlatController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\kelola data kalibrasi 0071\\public\\index.php')
+CRITICAL - 2025-01-13 09:02:21 --> [Caused by] mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`kalibrasi_0071`.`transaksikalibrasi`, CONSTRAINT `transaksikalibrasi_ibfk_2` FOREIGN KEY (`Alat`) REFERENCES `alat` (`IdAlat`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('DELETE FROM `alat`
+WHERE `IdAlat` IN (\'L001\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `alat`
+WHERE `IdAlat` IN (\'L001\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `alat`
+WHERE `IdAlat` IN (\'L001\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2843): CodeIgniter\Database\BaseConnection->query('DELETE FROM `alat`
+WHERE `IdAlat` IN :IdAlat:', [...], false)
+ 5 SYSTEMPATH\Model.php(521): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH\BaseModel.php(1158): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\AlatController.php(186): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AlatController->hapusAlat('L001')
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlatController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\kelola data kalibrasi 0071\\public\\index.php')
+INFO - 2025-01-13 09:02:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 09:02:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 09:02:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 09:02:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 09:02:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 09:02:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 09:02:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 09:02:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 09:03:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 09:03:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 09:03:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 09:03:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 09:03:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 09:04:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 09:04:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 09:04:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 09:04:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 09:04:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 09:04:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 09:04:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 09:04:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 09:04:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 09:05:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 09:05:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 09:05:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 09:34:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-13 09:37:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

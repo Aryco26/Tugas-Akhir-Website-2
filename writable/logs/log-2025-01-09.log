@@ -1,0 +1,351 @@
+INFO - 2025-01-09 06:54:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-09 06:55:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-09 06:55:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-09 06:55:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-09 07:41:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-09 07:50:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-09 07:57:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-09 08:04:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-09 08:08:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-09 08:12:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-09 08:12:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-09 08:13:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-09 08:19:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-09 08:20:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-09 08:21:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-09 08:34:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-09 08:43:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-09 08:52:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-09 08:55:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-09 09:11:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-09 09:14:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-09 09:14:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-09 09:16:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-09 09:16:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-09 09:23:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-09 09:24:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-09 09:26:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-09 09:26:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-09 09:26:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-09 09:26:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-01-09 09:26:42 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`kalibrasi_0071`.`transaksikalibrasi`, CONSTRAINT `transaksikalibrasi_ibfk_2` FOREIGN KEY (`Alat`) REFERENCES `alat` (`IdAlat`)) in D:\xampp\htdocs\kelola data kalibrasi 0071\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `tr...', 0)
+#1 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tr...')
+#2 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tr...')
+#3 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tr...', Array, false)
+#4 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\xampp\htdocs\kelola data kalibrasi 0071\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, false)
+#7 D:\xampp\htdocs\kelola data kalibrasi 0071\system\BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#8 D:\xampp\htdocs\kelola data kalibrasi 0071\app\Controllers\TransaksiController.php(150): CodeIgniter\BaseModel->save(Array)
+#9 D:\xampp\htdocs\kelola data kalibrasi 0071\system\CodeIgniter.php(933): App\Controllers\TransaksiController->store()
+#10 D:\xampp\htdocs\kelola data kalibrasi 0071\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+#11 D:\xampp\htdocs\kelola data kalibrasi 0071\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#13 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 D:\xampp\htdocs\kelola data kalibrasi 0071\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 D:\xampp\htdocs\kelola data kalibrasi 0071\system\rewrite.php(44): require_once('D:\\xampp\\htdocs...')
+#16 {main}
+CRITICAL - 2025-01-09 09:26:42 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`kalibrasi_0071`.`transaksikalibrasi`, CONSTRAINT `transaksikalibrasi_ibfk_2` FOREIGN KEY (`Alat`) REFERENCES `alat` (`IdAlat`))
+[Method: POST, Route: transaksi/store]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `transaksikalibrasi` (`IdKalibrasi`, `TransType`, `TransDate`, `Petugas`, `Alat`, `NoSPMB`, `TglSPMB`, `NoSPK`, `TglSPK`, `Vendor`, `TglKalibrasi`, `TglExpire`, `NoDokumen`, `Status`) VALUES (:IdKalibrasi:, :TransType:, :TransDate:, :Petugas:, :Alat:, :NoSPMB:, :TglSPMB:, :NoSPK:, :TglSPK:, :Vendor:, :TglKalibrasi:, :TglExpire:, :NoDokumen:, :Status:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\TransaksiController.php(150): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TransaksiController->store()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\kelola data kalibrasi 0071\\public\\index.php')
+CRITICAL - 2025-01-09 09:26:42 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`kalibrasi_0071`.`transaksikalibrasi`, CONSTRAINT `transaksikalibrasi_ibfk_2` FOREIGN KEY (`Alat`) REFERENCES `alat` (`IdAlat`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `transaksikalibrasi` (`IdKalibrasi`, `TransType`, `TransDate`, `Petugas`, `Alat`, `NoSPMB`, `TglSPMB`, `NoSPK`, `TglSPK`, `Vendor`, `TglKalibrasi`, `TglExpire`, `NoDokumen`, `Status`) VALUES (\'8787\', \'Kalibrasi Internal\', \'2025-01-09\', \'PT001\', \'njhj\', \'8997\', \'2025-01-09\', \'76767\', \'2025-01-31\', \'koko\', \'2025-01-09\', \'2025-01-31\', \'5656\', \'belum\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `transaksikalibrasi` (`IdKalibrasi`, `TransType`, `TransDate`, `Petugas`, `Alat`, `NoSPMB`, `TglSPMB`, `NoSPK`, `TglSPK`, `Vendor`, `TglKalibrasi`, `TglExpire`, `NoDokumen`, `Status`) VALUES (\'8787\', \'Kalibrasi Internal\', \'2025-01-09\', \'PT001\', \'njhj\', \'8997\', \'2025-01-09\', \'76767\', \'2025-01-31\', \'koko\', \'2025-01-09\', \'2025-01-31\', \'5656\', \'belum\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `transaksikalibrasi` (`IdKalibrasi`, `TransType`, `TransDate`, `Petugas`, `Alat`, `NoSPMB`, `TglSPMB`, `NoSPK`, `TglSPK`, `Vendor`, `TglKalibrasi`, `TglExpire`, `NoDokumen`, `Status`) VALUES (:IdKalibrasi:, :TransType:, :TransDate:, :Petugas:, :Alat:, :NoSPMB:, :TglSPMB:, :NoSPK:, :TglSPK:, :Vendor:, :TglKalibrasi:, :TglExpire:, :NoDokumen:, :Status:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\TransaksiController.php(150): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TransaksiController->store()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\kelola data kalibrasi 0071\\public\\index.php')
+CRITICAL - 2025-01-09 09:26:42 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`kalibrasi_0071`.`transaksikalibrasi`, CONSTRAINT `transaksikalibrasi_ibfk_2` FOREIGN KEY (`Alat`) REFERENCES `alat` (`IdAlat`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `transaksikalibrasi` (`IdKalibrasi`, `TransType`, `TransDate`, `Petugas`, `Alat`, `NoSPMB`, `TglSPMB`, `NoSPK`, `TglSPK`, `Vendor`, `TglKalibrasi`, `TglExpire`, `NoDokumen`, `Status`) VALUES (\'8787\', \'Kalibrasi Internal\', \'2025-01-09\', \'PT001\', \'njhj\', \'8997\', \'2025-01-09\', \'76767\', \'2025-01-31\', \'koko\', \'2025-01-09\', \'2025-01-31\', \'5656\', \'belum\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `transaksikalibrasi` (`IdKalibrasi`, `TransType`, `TransDate`, `Petugas`, `Alat`, `NoSPMB`, `TglSPMB`, `NoSPK`, `TglSPK`, `Vendor`, `TglKalibrasi`, `TglExpire`, `NoDokumen`, `Status`) VALUES (\'8787\', \'Kalibrasi Internal\', \'2025-01-09\', \'PT001\', \'njhj\', \'8997\', \'2025-01-09\', \'76767\', \'2025-01-31\', \'koko\', \'2025-01-09\', \'2025-01-31\', \'5656\', \'belum\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `transaksikalibrasi` (`IdKalibrasi`, `TransType`, `TransDate`, `Petugas`, `Alat`, `NoSPMB`, `TglSPMB`, `NoSPK`, `TglSPK`, `Vendor`, `TglKalibrasi`, `TglExpire`, `NoDokumen`, `Status`) VALUES (\'8787\', \'Kalibrasi Internal\', \'2025-01-09\', \'PT001\', \'njhj\', \'8997\', \'2025-01-09\', \'76767\', \'2025-01-31\', \'koko\', \'2025-01-09\', \'2025-01-31\', \'5656\', \'belum\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `transaksikalibrasi` (`IdKalibrasi`, `TransType`, `TransDate`, `Petugas`, `Alat`, `NoSPMB`, `TglSPMB`, `NoSPK`, `TglSPK`, `Vendor`, `TglKalibrasi`, `TglExpire`, `NoDokumen`, `Status`) VALUES (:IdKalibrasi:, :TransType:, :TransDate:, :Petugas:, :Alat:, :NoSPMB:, :TglSPMB:, :NoSPK:, :TglSPK:, :Vendor:, :TglKalibrasi:, :TglExpire:, :NoDokumen:, :Status:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\TransaksiController.php(150): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TransaksiController->store()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\kelola data kalibrasi 0071\\public\\index.php')
+INFO - 2025-01-09 09:27:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-09 09:28:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-09 09:28:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-01-09 09:28:29 --> ErrorException: Attempt to read property "IdKalibrasi" on array
+[Method: GET, Route: transaksi]
+in APPPATH\Views\transaksi\index.php on line 46.
+ 1 APPPATH\Views\transaksi\index.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "IdKalibrasi" on array', 'D:\\xampp\\htdocs\\kelola data kalibrasi 0071\\app\\Views\\transaksi\\index.php', 46)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\xampp\\htdocs\\kelola data kalibrasi 0071\\app\\Views\\transaksi\\index.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('transaksi/index', [], true)
+ 5 APPPATH\Controllers\TransaksiController.php(25): view('transaksi/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TransaksiController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\kelola data kalibrasi 0071\\public\\index.php')
+INFO - 2025-01-09 09:31:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-01-09 09:31:40 --> ErrorException: Attempt to read property "id" on array
+[Method: GET, Route: transaksi]
+in APPPATH\Views\transaksi\index.php on line 54.
+ 1 APPPATH\Views\transaksi\index.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on array', 'D:\\xampp\\htdocs\\kelola data kalibrasi 0071\\app\\Views\\transaksi\\index.php', 54)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\xampp\\htdocs\\kelola data kalibrasi 0071\\app\\Views\\transaksi\\index.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('transaksi/index', [], true)
+ 5 APPPATH\Controllers\TransaksiController.php(25): view('transaksi/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TransaksiController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\kelola data kalibrasi 0071\\public\\index.php')
+INFO - 2025-01-09 09:32:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-09 09:32:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-09 09:33:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-09 09:33:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-09 09:33:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-09 09:33:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-01-09 09:33:38 --> mysqli_sql_exception: Unknown column 'transaksikalibrasi.id' in 'where clause' in D:\xampp\htdocs\kelola data kalibrasi 0071\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\kelola data kalibrasi 0071\system\BaseModel.php(610): CodeIgniter\Model->doFind(true, '0071')
+#6 D:\xampp\htdocs\kelola data kalibrasi 0071\app\Controllers\TransaksiController.php(157): CodeIgniter\BaseModel->find('0071')
+#7 D:\xampp\htdocs\kelola data kalibrasi 0071\system\CodeIgniter.php(933): App\Controllers\TransaksiController->edit('0071')
+#8 D:\xampp\htdocs\kelola data kalibrasi 0071\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+#9 D:\xampp\htdocs\kelola data kalibrasi 0071\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\xampp\htdocs\kelola data kalibrasi 0071\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 D:\xampp\htdocs\kelola data kalibrasi 0071\system\rewrite.php(44): require_once('D:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2025-01-09 09:33:38 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'transaksikalibrasi.id' in 'where clause'
+[Method: GET, Route: transaksi/edit/0071]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `transaksikalibrasi`
+WHERE `transaksikalibrasi`.`id` = :transaksikalibrasi.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(610): CodeIgniter\Model->doFind(true, '0071')
+ 4 APPPATH\Controllers\TransaksiController.php(157): CodeIgniter\BaseModel->find('0071')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TransaksiController->edit('0071')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\kelola data kalibrasi 0071\\public\\index.php')
+CRITICAL - 2025-01-09 09:33:38 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'transaksikalibrasi.id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `transaksikalibrasi`
+WHERE `transaksikalibrasi`.`id` = \'0071\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `transaksikalibrasi`
+WHERE `transaksikalibrasi`.`id` = \'0071\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `transaksikalibrasi`
+WHERE `transaksikalibrasi`.`id` = :transaksikalibrasi.id:', [...], false)
+ 4 SYSTEMPATH\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(610): CodeIgniter\Model->doFind(true, '0071')
+ 6 APPPATH\Controllers\TransaksiController.php(157): CodeIgniter\BaseModel->find('0071')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TransaksiController->edit('0071')
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\kelola data kalibrasi 0071\\public\\index.php')
+CRITICAL - 2025-01-09 09:33:38 --> [Caused by] mysqli_sql_exception: Unknown column 'transaksikalibrasi.id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *
+FROM `transaksikalibrasi`
+WHERE `transaksikalibrasi`.`id` = \'0071\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `transaksikalibrasi`
+WHERE `transaksikalibrasi`.`id` = \'0071\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `transaksikalibrasi`
+WHERE `transaksikalibrasi`.`id` = \'0071\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `transaksikalibrasi`
+WHERE `transaksikalibrasi`.`id` = :transaksikalibrasi.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(610): CodeIgniter\Model->doFind(true, '0071')
+ 7 APPPATH\Controllers\TransaksiController.php(157): CodeIgniter\BaseModel->find('0071')
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TransaksiController->edit('0071')
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\kelola data kalibrasi 0071\\public\\index.php')
+INFO - 2025-01-09 09:33:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-01-09 09:33:51 --> mysqli_sql_exception: Unknown column 'transaksikalibrasi.id' in 'where clause' in D:\xampp\htdocs\kelola data kalibrasi 0071\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\kelola data kalibrasi 0071\system\BaseModel.php(610): CodeIgniter\Model->doFind(true, '0071')
+#6 D:\xampp\htdocs\kelola data kalibrasi 0071\app\Controllers\TransaksiController.php(157): CodeIgniter\BaseModel->find('0071')
+#7 D:\xampp\htdocs\kelola data kalibrasi 0071\system\CodeIgniter.php(933): App\Controllers\TransaksiController->edit('0071')
+#8 D:\xampp\htdocs\kelola data kalibrasi 0071\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+#9 D:\xampp\htdocs\kelola data kalibrasi 0071\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\xampp\htdocs\kelola data kalibrasi 0071\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 D:\xampp\htdocs\kelola data kalibrasi 0071\system\rewrite.php(44): require_once('D:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2025-01-09 09:33:51 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'transaksikalibrasi.id' in 'where clause'
+[Method: GET, Route: transaksi/edit/0071]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `transaksikalibrasi`
+WHERE `transaksikalibrasi`.`id` = :transaksikalibrasi.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(610): CodeIgniter\Model->doFind(true, '0071')
+ 4 APPPATH\Controllers\TransaksiController.php(157): CodeIgniter\BaseModel->find('0071')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TransaksiController->edit('0071')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\kelola data kalibrasi 0071\\public\\index.php')
+CRITICAL - 2025-01-09 09:33:51 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'transaksikalibrasi.id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `transaksikalibrasi`
+WHERE `transaksikalibrasi`.`id` = \'0071\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `transaksikalibrasi`
+WHERE `transaksikalibrasi`.`id` = \'0071\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `transaksikalibrasi`
+WHERE `transaksikalibrasi`.`id` = :transaksikalibrasi.id:', [...], false)
+ 4 SYSTEMPATH\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(610): CodeIgniter\Model->doFind(true, '0071')
+ 6 APPPATH\Controllers\TransaksiController.php(157): CodeIgniter\BaseModel->find('0071')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TransaksiController->edit('0071')
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\kelola data kalibrasi 0071\\public\\index.php')
+CRITICAL - 2025-01-09 09:33:51 --> [Caused by] mysqli_sql_exception: Unknown column 'transaksikalibrasi.id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *
+FROM `transaksikalibrasi`
+WHERE `transaksikalibrasi`.`id` = \'0071\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `transaksikalibrasi`
+WHERE `transaksikalibrasi`.`id` = \'0071\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `transaksikalibrasi`
+WHERE `transaksikalibrasi`.`id` = \'0071\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `transaksikalibrasi`
+WHERE `transaksikalibrasi`.`id` = :transaksikalibrasi.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(610): CodeIgniter\Model->doFind(true, '0071')
+ 7 APPPATH\Controllers\TransaksiController.php(157): CodeIgniter\BaseModel->find('0071')
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TransaksiController->edit('0071')
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\kelola data kalibrasi 0071\\public\\index.php')
+INFO - 2025-01-09 09:33:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-09 09:34:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-09 11:32:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-01-09 11:32:12 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in D:\xampp\htdocs\kelola data kalibrasi 0071\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'kalibrasi_0071', 3306, '', 0)
+#1 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\kelola data kalibrasi 0071\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\xampp\htdocs\kelola data kalibrasi 0071\app\Controllers\Home.php(21): CodeIgniter\BaseModel->findAll()
+#7 D:\xampp\htdocs\kelola data kalibrasi 0071\system\CodeIgniter.php(933): App\Controllers\Home->halLokasi()
+#8 D:\xampp\htdocs\kelola data kalibrasi 0071\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 D:\xampp\htdocs\kelola data kalibrasi 0071\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\xampp\htdocs\kelola data kalibrasi 0071\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 D:\xampp\htdocs\kelola data kalibrasi 0071\system\rewrite.php(44): require_once('D:\\xampp\\htdocs...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in D:\xampp\htdocs\kelola data kalibrasi 0071\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\xampp\htdocs\kelola data kalibrasi 0071\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\xampp\htdocs\kelola data kalibrasi 0071\app\Controllers\Home.php(21): CodeIgniter\BaseModel->findAll()
+#6 D:\xampp\htdocs\kelola data kalibrasi 0071\system\CodeIgniter.php(933): App\Controllers\Home->halLokasi()
+#7 D:\xampp\htdocs\kelola data kalibrasi 0071\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 D:\xampp\htdocs\kelola data kalibrasi 0071\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 D:\xampp\htdocs\kelola data kalibrasi 0071\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\xampp\htdocs\kelola data kalibrasi 0071\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\xampp\htdocs\kelola data kalibrasi 0071\system\rewrite.php(44): require_once('D:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2025-01-09 11:32:12 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: GET, Route: lokasi]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `lokasi`', [], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Home.php(21): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->halLokasi()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\kelola data kalibrasi 0071\\public\\index.php')
